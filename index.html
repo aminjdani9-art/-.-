@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الحي اللاتيني - تلخيص شامل</title>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Reem+Kufi:wght@700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{min-height:100vh;background:linear-gradient(135deg,#0f0c29 0%,#302b63 40%,#8B1E3F 75%,#C7372F 100%);font-family:'Amiri',serif;display:flex;justify-content:center;padding:25px}
+.container{width:100%;max-width:850px;text-align:center}
+.page{display:none}.page.active{display:block}
+.welcome-box{background:rgba(255,255,255,.15);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.3);border-radius:22px;padding:60px 30px;box-shadow:0 20px 60px rgba(0,0,0,.5);margin-top:10vh}
+.welcome-box h1{font-family:'Reem Kufi',sans-serif;font-size:2.8em;color:#ffe4ec;line-height:1.4;min-height:120px}
+.welcome-box p{color:#e9d8ff;font-size:1.3em;margin:20px 0 35px;min-height:30px}
+.btn{display:none;background:#ffe4ec;color:#5a1a2e;padding:14px 45px;border-radius:30px;text-decoration:none;font-size:1.4em;font-weight:700;cursor:pointer;border:none;font-family:'Reem Kufi',sans-serif;transition:.3s;box-shadow:0 10px 25px rgba(0,0,0,.3)}
+.btn.show{display:inline-block;animation:fade .8s ease}
+.btn:hover{transform:scale(1.07);background:white}
+@keyframes fade{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.stage{display:flex;justify-content:center}
+.parchment{width:100%;max-width:740px;background:#fdf6e3;background-image:radial-gradient(ellipse at top,rgba(139,90,43,.12) 0%,transparent 70%);border-radius:12px;box-shadow:0 0 0 1px #d4c5a0,0 0 0 5px #fdf6e3,0 25px 50px rgba(0,0,0,.7),inset 0 0 80px rgba(139,90,43,.15);padding:75px 45px;position:relative;text-align:right}
+.parchment::before,.parchment::after{content:'';position:absolute;left:-8px;right:-8px;height:32px;background:linear-gradient(to bottom,#e8d5a3,#c9b07a,#a68a5b);border-radius:16px;box-shadow:0 6px 18px rgba(0,0,0,.5)}
+.parchment::before{top:-16px}.parchment::after{bottom:-16px}
+.content{color:#3e2f1c;font-size:1.15em;line-height:2.1;text-align:justify}
+.content h2{font-family:'Reem Kufi',sans-serif;color:#5a1a2e;text-align:center;margin-bottom:20px;border-bottom:2px dashed #c9a86a;padding-bottom:12px;font-size:1.6em}
+#txt{white-space:pre-wrap;font-weight:700;min-height:200px}
+.cursor{display:inline-block;width:3px;height:1.15em;background:#8B1E3F;animation:blink .8s infinite;vertical-align:bottom}
+@keyframes blink{0%,50%{opacity:1}51%,100%{opacity:0}}
+.quote{display:none;text-align:center;margin-top:22px;font-weight:700;color:#8B1E3F;background:rgba(139,30,63,.12);padding:14px;border-radius:10px}
+.back{margin-bottom:20px;text-align:center}
+.back button{background:rgba(255,255,255,.15);color:#ffe4ec;border:1px solid rgba(255,255,255,.3);padding:8px 20px;border-radius:20px;cursor:pointer;font-family:'Reem Kufi',sans-serif}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div id="page1" class="page active">
+<div class="welcome-box">
+<h1 id="h1"></h1>
+<p id="h2"></p>
+<button id="btn" class="btn" onclick="go2()">دخول إلى التلخيص</button>
+</div>
+</div>
+
+<div id="page2" class="page">
+<div class="back"><button onclick="go1()">⬅ الرجوع للترحيب</button></div>
+<div class="stage"><div class="parchment"><div class="content">
+<h2>رواية الحي اللاتيني - تلخيص شامل</h2>
+<div id="txt"></div><span class="cursor" id="cur"></span>
+<div id="qt" class="quote">"إنه حي يفكر دائما، ويحب دائما، ويشك دائما - حي لا ينام"</div>
+</div></div></div>
+</div>
+
+</div>
+<script>
+const title="أهلاً وسهلاً بأستاذي الكريم وزملائي الأعزاء";
+const sub="أقدم لكم اليوم تلخيصي لرواية الحي اللاتيني";
+const body=`مقدمة عن الرواية:
+رواية "الحي اللاتيني" للكاتب اللبناني سهيل إدريس، صدرت سنة 1953 وتعتبر من أهم الروايات العربية التي عالجت موضوع الصراع بين الشرق والغرب.
+
+الشخصيات الرئيسية:
+1- سامي: البطل، شاب لبناني محافظ يذهب لباريس للدراسة، يمثل الشاب العربي التقليدي.
+2- جانين: فتاة فرنسية طالبة في السوربون، متحررة ومثقفة، تمثل الغرب وحريته.
+3- أصدقاء الحي: طلبة عرب وأجانب يعيشون نفس الصراع.
+
+ملخص الأحداث:
+يسافر سامي من بيروت إلى باريس لإكمال دراسته في جامعة السوربون ويسكن في الحي اللاتيني. يصاب بصدمة حضارية: اختلاط الجنسين، حرية العلاقات، النقاش المفتوح في الدين والجنس والسياسة.
+
+يتعرف على جانين ويقع في حبها. تبدأ علاقتهما وتتطور إلى حب عميق. هنا يبدأ صراعه الداخلي بين تربيته الشرقية التي ترى هذا حراما، وبين عقله الجديد الذي يرى الحب حرية.
+
+وصف الحي اللاتيني:
+- ماديا: حي قديم في الضفة اليسرى لنهر السين حول السوربون، أزقة ضيقة ومباني حجرية، مكتبات قديمة وباعة كتب على ضفاف السين، مقاهي أدبية مثل سان ميشال، حي بوهيمي فقير تفوح منه رائحة القهوة والتبغ والكتب.
+- معنويا: رمز للحرية الفكرية المطلقة. ليس مجرد مكان بل مدرسة ثانية. فيه يتعلم الطالب كيف يشك ويفكر ويحب بدون قيود. هو المكان الذي يتحطم فيه الشرق القديم ويولد إنسان جديد.
+
+التحول والنهاية:
+يتحول سامي من شاب محافظ يخاف من المرأة إلى شاب متحرر يدافع عن حرية المرأة. يقرأ لفرويد وسارتر. في النهاية يفترق عن جانين ويعود إلى لبنان وهو شخص آخر، يحمل فكرين في رأس واحد: فكر الشرق وفكر الغرب.
+
+الرسالة:
+النهضة العربية لن تكون إلا بالانفتاح على الفكر الحر مع الحفاظ على الأصالة، وأن الصراع بين الشرق والغرب هو صراع داخل كل شاب عربي مثقف.
+`;
+
+function type(el,txt,sp,cb,follow=false){
+  let i=0;el.textContent='';
+  (function l(){
+    if(i<txt.length){
+      el.textContent+=txt[i++];
+      if(follow) document.getElementById('cur').scrollIntoView({behavior:'auto',block:'end'});
+      setTimeout(l,sp);
+    } else if(cb) cb();
+  })();
+}
+function go2(){
+  document.getElementById('page1').classList.remove('active');
+  document.getElementById('page2').classList.add('active');
+  window.scrollTo({top:0,behavior:'auto'});
+  type(document.getElementById('txt'),body,30,()=>{
+    document.getElementById('qt').style.display='block';
+    document.getElementById('cur').style.display='none';
+  },true);
+}
+function go1(){
+  document.getElementById('page2').classList.remove('active');
+  document.getElementById('page1').classList.add('active');
+  document.getElementById('txt').textContent='';
+  document.getElementById('qt').style.display='none';
+  document.getElementById('cur').style.display='inline-block';
+  window.scrollTo({top:0,behavior:'auto'});
+}
+
+window.onload=()=>{
+  type(document.getElementById('h1'),title,110,()=>{
+    setTimeout(()=>{type(document.getElementById('h2'),sub,75,()=>{
+      document.getElementById('btn').classList.add('show');
+    })},300)
+  });
+};
+</script>
+</body>
+  </html>
